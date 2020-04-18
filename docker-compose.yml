@@ -110,9 +110,9 @@ networks:
     image: reportportal/service-auto-analyzer:5.1.0
     environment:
       LOGGING_LEVEL: info
-    depends_on:
-      - rabbitmq
-      - elasticsearch
+    #depends_on:
+    #  - rabbitmq
+    #  - elasticsearch
     restart: always
 
   ### initial db schema for reportportal
