@@ -105,16 +105,7 @@ networks:
   elastic:
     driver: bridge
 
-  analyzer:
-    image: reportportal/service-auto-analyzer:5.1.0
-    environment:
-      LOGGING_LEVEL: info
-    depends_on:
-      - rabbitmq
-      - elasticsearch
-    restart: always
-
-  ### initial db schema for reportportal
+   ### initial db schema for reportportal
   db-scripts:
     image: reportportal/migrations:5.1.0
     depends_on:
