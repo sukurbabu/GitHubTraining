@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Automation Test Project]">
+  <parameter name="Browser" value="CHROME"/>
+  <listeners>
+    <listener class-name="com.cigniti.ExtentReportUtilities.ExtentListeners"/>
+    <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener"/>
+  </listeners>
+  <test thread-count="5" name="Login Into CRM(failed)">
+    <classes>
+      <class name="client.crm.Release1.Tests.HomeTest">
+        <methods>
+          <include name="setUpFramework"/>
+          <include name="verifyHomeLinksideNavigationLink"/>
+        </methods>
+      </class> <!-- client.crm.Release1.Tests.HomeTest -->
+    </classes>
+  </test> <!-- Login Into CRM(failed) -->
+</suite> <!-- Failed suite [Automation Test Project] -->

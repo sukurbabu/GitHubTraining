@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="1" total="8" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Automation Test Project" duration-ms="69816" started-at="2020-04-30T11:05:13 IST" finished-at="2020-04-30T11:06:23 IST">
+    <groups>
+    </groups>
+    <test name="Login Into CRM" duration-ms="69816" started-at="2020-04-30T11:05:13 IST" finished-at="2020-04-30T11:06:23 IST">
+      <class name="client.crm.Release1.Tests.LoginTest">
+        <test-method status="PASS" signature="setUpFramework(java.lang.String)[pri:0, instance:client.crm.Release1.Tests.LoginTest@3569edd5]" name="setUpFramework" is-config="true" duration-ms="4311" started-at="2020-04-30T11:05:09 IST" finished-at="2020-04-30T11:05:13 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpFramework -->
+        <test-method status="PASS" signature="loginCRMTest(java.util.Hashtable)[pri:0, instance:client.crm.Release1.Tests.LoginTest@3569edd5]" name="loginCRMTest" duration-ms="7210" started-at="2020-04-30T11:05:14 IST" data-provider="mdp" finished-at="2020-04-30T11:05:21 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=babu.sukur@gmail.com, Password=Poojya@1007, Runmode=Y}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginCRMTest -->
+      </class> <!-- client.crm.Release1.Tests.LoginTest -->
+      <class name="client.crm.Release1.Tests.HomeTest">
+        <test-method status="PASS" signature="verifyCalendarLinksideNavigationLink()[pri:0, instance:client.crm.Release1.Tests.HomeTest@1f651cd8]" name="verifyCalendarLinksideNavigationLink" duration-ms="73" started-at="2020-04-30T11:05:21 IST" finished-at="2020-04-30T11:05:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCalendarLinksideNavigationLink -->
+        <test-method status="PASS" signature="verifyCompaniesLinksideNavigationLink()[pri:0, instance:client.crm.Release1.Tests.HomeTest@1f651cd8]" name="verifyCompaniesLinksideNavigationLink" duration-ms="64" started-at="2020-04-30T11:05:21 IST" finished-at="2020-04-30T11:05:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCompaniesLinksideNavigationLink -->
+        <test-method status="PASS" signature="verifyContactsLinksideNavigationLink()[pri:0, instance:client.crm.Release1.Tests.HomeTest@1f651cd8]" name="verifyContactsLinksideNavigationLink" duration-ms="812" started-at="2020-04-30T11:05:21 IST" finished-at="2020-04-30T11:05:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyContactsLinksideNavigationLink -->
+        <test-method status="PASS" signature="verifyDealsLinksideNavigationLink()[pri:0, instance:client.crm.Release1.Tests.HomeTest@1f651cd8]" name="verifyDealsLinksideNavigationLink" duration-ms="71" started-at="2020-04-30T11:05:22 IST" finished-at="2020-04-30T11:05:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDealsLinksideNavigationLink -->
+        <test-method status="FAIL" signature="verifyHomeLinksideNavigationLink()[pri:0, instance:client.crm.Release1.Tests.HomeTest@1f651cd8]" name="verifyHomeLinksideNavigationLink" duration-ms="61046" started-at="2020-04-30T11:05:22 IST" finished-at="2020-04-30T11:06:23 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at client.crm.Pages.HomePage.verifyHomeLink(HomePage.java:106)
+at client.crm.Release1.Tests.HomeTest.verifyHomeLinksideNavigationLink(HomeTest.java:47)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomeLinksideNavigationLink -->
+        <test-method status="PASS" signature="verifyTasksLinksideNavigationLink()[pri:0, instance:client.crm.Release1.Tests.HomeTest@1f651cd8]" name="verifyTasksLinksideNavigationLink" duration-ms="75" started-at="2020-04-30T11:06:23 IST" finished-at="2020-04-30T11:06:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTasksLinksideNavigationLink -->
+      </class> <!-- client.crm.Release1.Tests.HomeTest -->
+    </test> <!-- Login Into CRM -->
+  </suite> <!-- Automation Test Project -->
+</testng-results>

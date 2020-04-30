@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Test Project" >
+<parameter name="Browser" value="CHROME" />
+    <listeners>
+    	<listener class-name="com.cigniti.ExtentReportUtilities.ExtentListeners"></listener>
+        <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener"/> 
+    </listeners>
+
+    <test verbose="1" name="Login Into CRM">
+        <classes>
+        	<class name="client.crm.Release1.Tests.LoginTest"/>
+        	<class name="client.crm.Release1.Tests.HomeTest"/>
+           <!--  <class name="com.epam.reportportal.example.testng.log4j.logging.LuckyPugTest"/>  -->
+        </classes>
+    </test>
+
+</suite>
